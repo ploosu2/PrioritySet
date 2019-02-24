@@ -3,7 +3,7 @@ Javascript implementation of a priority set
 
 Here's an example usage:
 
-```
+```javascript
 var s = new PrioritySet();
 s.push('a', 4);
 s.push('b', 5);
