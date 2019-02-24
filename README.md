@@ -17,4 +17,6 @@ s.remove('a'); //--> true
 s.pop(); // --> 'd'
 s.pop(); // --> null
 
+s.isEmpty(); // --> true
+
 ```
