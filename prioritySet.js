@@ -34,20 +34,6 @@ class PrioritySet {
             this.heap.push(newNode);
             this.bubble(this.heap.length - 1);
         }
-        /*
-        let currInd = this.heap.length - 1;
-        let currParentInd = currInd>>1;
-        while ( this.heap[currParentInd]
-                && newNode.priority > this.heap[currParentInd].priority ) {
-            let parent = this.heap[currParentInd];
-            this.heap[currParentInd] = newNode;
-            this.heap[currInd] = parent;
-            this.positions[parent.value] = currInd;
-            this.positions[newNode.value] = currParentInd;
-            currInd = currParentInd;
-            currParentInd = currInd>>1;
-        }
-        */
     }
     
     /** Swap the node at ind with its greater child as long as possible */
@@ -119,14 +105,10 @@ class PrioritySet {
                 this.bubble(ind);
             }
         }
-        
-        //this.remove(elem);
-        //this.push(elem, priority);
     }
     
     
 }
-
 
 PrioritySet.prototype.Node = class Node {
     constructor(val, priority) {
